@@ -1,3 +1,5 @@
+
+/*
 import Sensorer.PulsSensor;
 import Sensorer.SpO2Sensor;
 import javafx.application.Platform;
@@ -28,7 +30,7 @@ public class Vindue6Busra {
         });
             }
 
-        }
+
     
     @FXML
     private TextField nySpO2Value;
@@ -44,3 +46,5 @@ public class Vindue6Busra {
     }
 
 }
+
+*/
