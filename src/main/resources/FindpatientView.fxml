@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Logincontroller">
+   <children>
+      <TextField fx:id="CPRfelt" layoutY="22.0" onKeyReleased="#updateLabel" prefHeight="27.0" prefWidth="223.0" promptText="Skriv CPR her for at søge efter patient...." />
+      <Label fx:id="statuslabel" layoutX="251.0" layoutY="27.0" text="Label" />
+   </children>
+</Pane>
