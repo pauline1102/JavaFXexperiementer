@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vindue3">
+   <children>
+      <Button layoutX="400.0" layoutY="299.0" mnemonicParsing="false" onAction="#switchToVindue5" text="Login" />
+      <PasswordField layoutX="251.0" layoutY="240.0" promptText="Password" />
+      <TextField layoutX="251.0" layoutY="191.0" promptText="Brugernavn" />
+      <Label layoutX="289.0" layoutY="148.0" text="Læge Login" />
+   </children>
+</AnchorPane>

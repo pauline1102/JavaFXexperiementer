@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vindue6Busra">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Patient Info">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="Navn: Busra Bilgin" />
+                              <Label text="CPR nr: 301100" />
+                              <Label text="Alder: 20" />
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Ny Måling">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="365.0" prefWidth="611.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="SpO2">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="232.0" prefWidth="312.0">
+                                       <children>
+                                          <Button fx:id="StartSpO2Maling" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start Måling" />
+                                          <ButtonBar layoutX="143.0" layoutY="19.0" prefHeight="40.0" prefWidth="200.0">
+                                            <buttons>
+                                                <Label fx:id="nySpO2Value" onInputMethodTextChanged="#printSpO2" text="NyVærdi" />
+                                              <Button mnemonicParsing="false" text="Gem" />
+                                            </buttons>
+                                          </ButtonBar>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Temperatur">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start Måling" />
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="EKG">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start Måling" />
+                                       </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="Puls">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="345.0" prefWidth="545.0">
+                                       <children>
+                                          <Button fx:id="nyPulsMaaling" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start Måling" />
+                                          <ButtonBar layoutX="122.0" layoutY="128.0" prefHeight="40.0" prefWidth="200.0">
+                                            <buttons>
+                                                <TextArea fx:id="pulsMaalingNy" prefHeight="200.0" prefWidth="200.0" />
+                                              <Button mnemonicParsing="false" text="Gem" />
+                                            </buttons>
+                                          </ButtonBar>
+                                       </children></AnchorPane>
+                                  </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Tidligere målinger">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <TabPane prefHeight="373.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                    <Tab text="SpO2">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="232.0" prefWidth="312.0">
+                                       <children>
+                                          <HBox layoutX="42.0" layoutY="72.0" prefHeight="227.0" prefWidth="567.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
+                                             <children>
+                                                <VBox prefHeight="227.0" prefWidth="140.0">
+                                                   <children>
+                                                      <Label prefHeight="29.0" prefWidth="100.0" text="Dato" />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="227.0" prefWidth="141.0">
+                                                   <children>
+                                                      <Label prefHeight="34.0" prefWidth="100.0" text="Måling" />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                   </children></VBox>
+                                                <VBox prefHeight="204.0" prefWidth="300.0">
+                                                   <children>
+                                                      <Label prefHeight="34.0" prefWidth="173.0" text="Kommentarer" />
+                                                      <TextField prefWidth="227.0" promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                   </children></VBox>
+                                             </children>
+                                          </HBox>
+                                          <Label layoutX="14.0" layoutY="14.0" text="Tidligere SpO2 målinger" underline="true" />
+                                       </children></AnchorPane>
+                                        </content>
+                                    </Tab>
+                                    <Tab text="Temperatur">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="14.0" text="Tidligere temperatur målinger" underline="true" />
+                                          <HBox layoutX="14.0" layoutY="72.0" prefHeight="227.0" prefWidth="567.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
+                                             <children>
+                                                <VBox prefHeight="227.0" prefWidth="134.0">
+                                                   <children>
+                                                      <Label prefHeight="30.0" prefWidth="134.0" text="Dato" />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="227.0" prefWidth="166.0">
+                                                   <children>
+                                                      <Label prefHeight="34.0" prefWidth="162.0" text="Måling" />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                      <TextField />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="227.0" prefWidth="273.0">
+                                                   <children>
+                                                      <Label prefHeight="32.0" prefWidth="287.0" text="Kommentarer" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                      <TextField promptText="Tilføj kommentar" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children></AnchorPane>
+                                        </content>
+                                    </Tab>
+                                    <Tab text="EKG">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                        </content>
+                                    </Tab>
+                                    <Tab text="Puls">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                        </content>
+                                    </Tab>
+                                </tabs>
+                            </TabPane>
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
