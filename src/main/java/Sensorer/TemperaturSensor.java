@@ -4,11 +4,11 @@ public class TemperaturSensor {
 
     public double TemperaturSensor() {
         double temperatur;
-        double celcius;
+        double celsius;
         while (true) {
             temperatur = (Math.random() * (200 - 150) + 150);
-            celcius = (temperatur * 4 / 50) + 24;
-            return celcius;
+            celsius = (temperatur * 4 / 50) + 24;
+            return celsius;
         }
     }
 

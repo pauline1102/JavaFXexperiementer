@@ -32,11 +32,10 @@ public class Logincontroller {
 
     public void loginvalidation(ActionEvent actionEvent) throws IOException {
 
-
         if(tekstfelt.getText().contains("læge")){
-            StartUp.setRoot("doctorScene");
-        } if(tekstfelt.getText().contains("syg")){
-            StartUp.setRoot("patientScene");
+            StartUp.setRoot("vindue5");
+        } if(tekstfelt.getText().contains("patient")){
+            StartUp.setRoot("vindue4Busra");
         }
     }
 

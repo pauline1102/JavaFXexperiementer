@@ -3,13 +3,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vindue6Busra">
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vindue6Busra">
    <children>
-      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <TabPane prefHeight="400.0" prefWidth="599.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
           <Tab text="Patient Info">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="522.0">
                      <children>
                         <VBox layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0">
                            <children>
@@ -18,6 +18,7 @@
                               <Label text="Alder: 20" />
                            </children>
                         </VBox>
+                        <Button fx:id="logudpatient" layoutX="422.0" layoutY="320.0" mnemonicParsing="false" onAction="#switchToMasterLogin" text="Log ud" />
                      </children></AnchorPane>
             </content>
           </Tab>
@@ -29,12 +30,12 @@
                           <tabs>
                             <Tab text="SpO2">
                               <content>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="232.0" prefWidth="312.0">
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="336.0" prefWidth="400.0">
                                        <children>
-                                          <Button fx:id="StartSpO2Maling" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start Måling" />
-                                          <ButtonBar layoutX="143.0" layoutY="19.0" prefHeight="40.0" prefWidth="200.0">
+                                          <Button fx:id="StartSpO2Maling" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#StartMalingS" text="Start Måling" />
+                                          <ButtonBar layoutX="173.0" layoutY="19.0" prefHeight="40.0" prefWidth="200.0">
                                             <buttons>
-                                                <Label fx:id="nySpO2Value" onInputMethodTextChanged="#printSpO2" text="NyVærdi" />
+                                                <Label fx:id="nyVærdi" text="NyVærdi" />
                                               <Button mnemonicParsing="false" text="Gem" />
                                             </buttons>
                                           </ButtonBar>

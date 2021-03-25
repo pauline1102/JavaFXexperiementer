@@ -2,18 +2,29 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vindue4">
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vindue4">
    <children>
-      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane prefHeight="400.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Patient Info">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="14.0" layoutY="14.0" text="Navn: Busra Bilgin" />
-                        <Label layoutX="14.0" layoutY="31.0" text="CPR nr: 301100" />
-                        <Label layoutX="14.0" layoutY="48.0" text="Alder: 20" />
+                        <Label layoutX="14.0" layoutY="14.0" text="Navn: Busra Bilgin">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                        <Label layoutX="14.0" layoutY="44.0" text="CPR nr: 301100">
+                           <font>
+                              <Font size="19.0" />
+                           </font></Label>
+                        <Label layoutX="14.0" layoutY="74.0" text="Alder: 20">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Button fx:id="logudpatient" layoutX="434.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchToMasterlogin" text="Log ud" />
                      </children>
                   </AnchorPane>
             </content>
@@ -23,6 +34,38 @@
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <Label layoutX="14.0" layoutY="14.0" prefHeight="10.0" prefWidth="35.0" text="Puls" />
+                        <Label layoutX="14.0" layoutY="38.0" text="Tidligere målinger:" underline="true" />
+                        <HBox layoutX="14.0" layoutY="65.0" prefHeight="100.0" prefWidth="392.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="96.0" text="Dato" underline="true" />
+                                    <Label text="5/3-2021" />
+                                    <Label text="6/3-2021" />
+                                    <Label text="12/3-2021" />
+                                    <Label text="20/3-2021" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Værdi/pr minut" underline="true" />
+                                    <Label text="89 " />
+                                    <Label text="71" />
+                                    <Label text="65" />
+                                    <Label text="68" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="198.0">
+                                 <children>
+                                    <Label text="Kommentarer fra sundhedspersonale" underline="true" />
+                                    <Label text="Læge Hansen: Lidt for høj" />
+                                    <Label text="Læge Hansen: fin" />
+                                    <Label text="Læge Hansen: fin" />
+                                    <Label text="Læge Hansen: fin" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
                      </children></AnchorPane>
             </content>
           </Tab>
@@ -31,6 +74,38 @@
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <Label layoutX="14.0" layoutY="14.0" text="Temperatur" />
+                        <Label layoutX="14.0" layoutY="43.0" text="Tidligere målinger:" />
+                        <HBox layoutX="13.0" layoutY="74.0" prefHeight="100.0" prefWidth="469.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Dato" underline="true" />
+                                    <Label text="5/3-2021" />
+                                    <Label text="6/3-2021" />
+                                    <Label text="12/3-2021" />
+                                    <Label text="20/3-2021" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Værdi/grader C" underline="true" />
+                                    <Label text="37.457636" />
+                                    <Label text="38.00938" />
+                                    <Label text="37.76757" />
+                                    <Label text="39.87367" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="267.0">
+                                 <children>
+                                    <Label text="Kommentarer fra sundhedspersonale" underline="true" />
+                                    <Label text="Læge Hansen: Normal" />
+                                    <Label text="Læge Hansen: Lidt forhøjet" />
+                                    <Label text="Læge Shaya: Normal" />
+                                    <Label text="Læge Shaya: Forhøjet - feber" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
                      </children></AnchorPane>
                 </content>
             </Tab>
@@ -42,11 +117,43 @@
                      </children></AnchorPane>
                 </content>
             </Tab>
-            <Tab text="SpO2">
+            <Tab text="Iltmætning">
                 <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="14.0" layoutY="14.0" text="SpO2" />
+                        <Label layoutX="14.0" layoutY="14.0" text="Iltmætning af blodet" />
+                        <Label layoutX="14.0" layoutY="43.0" text="Tidligere målinger:" underline="true" />
+                        <HBox layoutX="14.0" layoutY="85.0" prefHeight="100.0" prefWidth="464.0">
+                           <children>
+                              <VBox prefHeight="100.0" prefWidth="120.0">
+                                 <children>
+                                    <Label text="Dato:" underline="true" />
+                                    <Label text="5/3-2021" />
+                                    <Label text="6/3-2021" />
+                                    <Label text="12/3-2021" />
+                                    <Label text="20/3-2021" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="130.0">
+                                 <children>
+                                    <Label text="Værdi/%" underline="true" />
+                                    <Label text="95" />
+                                    <Label text="98" />
+                                    <Label text="99" />
+                                    <Label text="97" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="211.0">
+                                 <children>
+                                    <Label text="Kommentarer fra sundhedspersonale" underline="true" />
+                                    <Label text="Læge Hussein: Lidt for lav" />
+                                    <Label text="Læge Hussein: Normal" />
+                                    <Label text="Læge Hussein: Normal" />
+                                    <Label text="Læge Hussein: Normal" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
                      </children></AnchorPane>
                 </content>
             </Tab>

@@ -1,3 +1,4 @@
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.TableColumn;
@@ -11,5 +12,9 @@ public class Vindue5 {
     @FXML
     private void switchToVindue6Busra() throws IOException {
         StartUp.setRoot("vindue6Busra");
+    }
+
+    public void switchtoMasterLogin(ActionEvent actionEvent) throws IOException {
+        StartUp.setRoot("masterlogin");
     }
 }

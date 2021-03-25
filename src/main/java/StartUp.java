@@ -15,7 +15,7 @@ public class StartUp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        scene = new Scene(loadFXML("FindpatientView"),700,500);
+        scene = new Scene(loadFXML("masterlogin"),500,400);
         primaryStage.setScene(scene);
         primaryStage.show();
 
