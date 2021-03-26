@@ -32,13 +32,7 @@
                               <content>
                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="336.0" prefWidth="400.0">
                                        <children>
-                                          <Button fx:id="StartSpO2Maling" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#StartMalingS" text="Start Måling" />
-                                          <ButtonBar layoutX="173.0" layoutY="19.0" prefHeight="40.0" prefWidth="200.0">
-                                            <buttons>
-                                                <Label fx:id="nyVærdi" text="NyVærdi" />
-                                              <Button mnemonicParsing="false" text="Gem" />
-                                            </buttons>
-                                          </ButtonBar>
+                                          <Button fx:id="StartSpO2Maling" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start Måling" />
                                        </children>
                                     </AnchorPane>
                               </content>

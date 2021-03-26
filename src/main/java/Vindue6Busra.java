@@ -12,9 +12,6 @@ import java.io.IOException;
 
 public class Vindue6Busra {
 
-    @FXML
-    private Label nyVærdi;
-
     public void switchToMasterLogin(ActionEvent actionEvent) throws IOException {
         StartUp.setRoot("masterlogin");
     }
