@@ -22,25 +22,15 @@ public class Logincontroller {
 
     //@FXML
     //Button logoutbutton;
-    @FXML
-    private void switchToPrimary() throws IOException {
-
-
-
-    }
-
 
     public void loginvalidation(ActionEvent actionEvent) throws IOException {
 
-        if(tekstfelt.getText().contains("læge")){
+        if (tekstfelt.getText().contains("læge")) {
             StartUp.setRoot("vindue5");
-        } if(tekstfelt.getText().contains("patient")){
+        }
+        if (tekstfelt.getText().contains("patient")) {
             StartUp.setRoot("vindue4Busra");
         }
-    }
-
-    public void logout() throws IOException {
-        StartUp.setRoot("masterlogin");
     }
 
     public void updateLabel(KeyEvent keyEvent) {

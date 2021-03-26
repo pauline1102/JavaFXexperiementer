@@ -12,19 +12,20 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="14.0" layoutY="14.0" text="Navn: Busra Bilgin">
+                        <Label layoutX="14.0" layoutY="23.0" text="Navn: Busra Bilgin">
                            <font>
                               <Font size="20.0" />
                            </font></Label>
-                        <Label layoutX="14.0" layoutY="44.0" text="CPR nr: 301100">
+                        <Label layoutX="14.0" layoutY="53.0" text="CPR nr: 301100">
                            <font>
                               <Font size="19.0" />
                            </font></Label>
-                        <Label layoutX="14.0" layoutY="74.0" text="Alder: 20">
+                        <Label layoutX="14.0" layoutY="81.0" text="Alder: 20">
                            <font>
                               <Font size="14.0" />
                            </font></Label>
                         <Button fx:id="logudpatient" layoutX="434.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchToMasterlogin" text="Log ud" />
+                        <Label layoutX="14.0" layoutY="6.0" text="Logget ind som:" />
                      </children>
                   </AnchorPane>
             </content>
