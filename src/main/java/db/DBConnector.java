@@ -4,7 +4,7 @@ import java.sql.*;
 public class DBConnector {
     private static Connection connection = null;
     private static String SQLITEDriver = "jdbc:sqlite:";
-    private static String MYSQLDriver = "jdbc:mysql://" + "localhost:3306/";
+    private static String MYSQLDriver = "jdbc:mysql://" + "127.0.0.1:3306/";
     private static String url;
 
     Connection getMYSQLConnection(String username, String password, String Schema) {
