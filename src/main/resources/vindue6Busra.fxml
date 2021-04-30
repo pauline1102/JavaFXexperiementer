@@ -30,9 +30,10 @@
                           <tabs>
                             <Tab text="SpO2">
                               <content>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="336.0" prefWidth="400.0">
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="336.0" prefWidth="463.0">
                                        <children>
-                                          <Button fx:id="StartSpO2Maling" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start Måling" />
+                                          <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#visSpO2maaling" text="Hent Måling" />
+                                          <Label fx:id="visdata" layoutX="137.0" layoutY="18.0" prefHeight="16.0" prefWidth="141.0" text="SpO2-måling" />
                                        </children>
                                     </AnchorPane>
                               </content>
@@ -41,7 +42,8 @@
                               <content>
                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                        <children>
-                                          <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start Måling" />
+                                          <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#visTempmaaling" text="Hent Måling" />
+                                          <Label fx:id="tempmaaling" layoutX="122.0" layoutY="18.0" prefHeight="19.0" prefWidth="109.0" text="Temperatur" />
                                        </children></AnchorPane>
                               </content>
                             </Tab>
@@ -49,7 +51,8 @@
                                   <content>
                                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                        <children>
-                                          <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start Måling" />
+                                          <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#visEKGmaaling" text="Hent Måling" />
+                                          <Label fx:id="ekgmaaling" layoutX="114.0" layoutY="18.0" prefHeight="14.0" prefWidth="111.0" text="EKG" />
                                        </children>
                                       </AnchorPane>
                                   </content>
@@ -58,7 +61,8 @@
                                   <content>
                                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="345.0" prefWidth="545.0">
                                        <children>
-                                          <Button fx:id="nyPulsMaaling" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start Måling" />
+                                          <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#visPulsmaaling" text="Hent Måling" />
+                                          <Label fx:id="pulsmaaling" layoutX="117.0" layoutY="17.0" prefHeight="20.0" prefWidth="123.0" text="Puls" />
                                        </children></AnchorPane>
                                   </content>
                               </Tab>

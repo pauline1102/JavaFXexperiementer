@@ -1,9 +1,11 @@
+import db.ConnectionUser;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.sql.Connection;
 
 public class StartUp extends Application {
     private static Scene scene;
@@ -16,6 +18,7 @@ public class StartUp extends Application {
     public void start(Stage primaryStage) throws IOException {
         scene = new Scene(loadFXML("masterlogin"),500,400);
         primaryStage.setScene(scene);
+
         primaryStage.show();
 
     }

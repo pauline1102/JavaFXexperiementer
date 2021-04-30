@@ -3,6 +3,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.fxml.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
